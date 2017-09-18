@@ -1,4 +1,4 @@
-# Evolution-Calculator
+# Pokemon Tracker
 
 By Henry and Diggy
 
