@@ -18,4 +18,4 @@ def main():
             poke_num = int(poke_num) - (int(pokemon[2]) - int(candy_remain))
             evolve_remain = 0
         transfer = int(pokemon[0]) - int(poke_num)
-        print("You can evolve", evolve, "NAME_PLACEHOLDER", "if you transfer", transfer)
+        print("You can evolve", evolve, pokemon[3], "if you transfer", transfer)

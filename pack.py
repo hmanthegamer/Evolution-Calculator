@@ -6,7 +6,7 @@ def main():
     number_candies = input("Number of candies: ")
     evolve = input("Amount of candies required to evolve: ")
 
-    poke = [number_pokemon,number_candies,evolve]
+    poke = [number_pokemon,number_candies,evolve,name]
 
     numpy.save("storage\\"+name,poke)
 
