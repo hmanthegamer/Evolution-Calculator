@@ -1,4 +1,4 @@
-import pack
+import pack, load
 
 def main():
     while True:
@@ -7,5 +7,7 @@ def main():
             cont = ""
             while cont == "":
                 cont = pack.main()
+        elif x == "out":
+            print(load.main())
 
 main()
