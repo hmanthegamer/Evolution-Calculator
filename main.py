@@ -9,13 +9,14 @@ def main():
             while cont == "":
                 cont = pack.main()
         elif x == "out":
-            print(load.main())
-        #elif x == "list":
-        #    print(load.list_poke)
+            load.main()
+        elif x == "list":
+            load.list_poke()
         elif x == "help":
             print("Commands:"
-                  "\nadd = regester a new pokemon"
-                  "\nout = output how many pokemon you can evolve")
+                  "\nadd = regester a new Pokemon"
+                  "\nout = output how many Pokemon you can evolve"
+                  "\nlist = list all Pokemon you currently have")
         else:
             print("Try typing \"help\"")
 

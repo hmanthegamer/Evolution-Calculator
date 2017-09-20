@@ -9,7 +9,7 @@ def get_names():
 def main():
     files = get_names()
     for i in files:
-        pokemon = numpy.load("storage\\"+i)
+        pokemon = numpy.load("storage\\" + i)
         poke_num = pokemon[0]
         evolve = int(pokemon[1]) // int(pokemon[2])
         candy_remain = int(pokemon[1]) % int(pokemon[2])
@@ -20,3 +20,8 @@ def main():
         transfer = int(pokemon[0]) - int(poke_num)
         if evolve > 0:
             print("You can evolve", evolve, pokemon[3], "if you transfer", transfer)
+def list_poke():
+    files = get_names()
+    for i in files:
+        pokemon = numpy.load("storage\\" + i)
+        print(pokemon[3])
