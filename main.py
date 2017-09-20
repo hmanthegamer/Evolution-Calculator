@@ -14,12 +14,15 @@ def main():
             load.list_poke()
         elif x == "del":
             load.delete()
+        elif x == "catch":
+            pack.catch()
         elif x == "help":
             print("Commands:"
                   "\nadd = regester a new Pokemon"
                   "\nout = output how many Pokemon you can evolve"
                   "\nlist = list all Pokemon you currently have"
-                  "\ndel = delete a pokemon, will prompt for name \"all\" will delete all")
+                  "\ndel = delete a pokemon, will prompt for name \"all\" will delete all"
+                  "\ncatch = register catching a pokemon")
         else:
             print("Try typing \"help\"")
 

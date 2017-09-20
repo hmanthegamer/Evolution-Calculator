@@ -12,7 +12,7 @@ def main():
         pokemon = numpy.load("storage\\" + i)
         poke_num = pokemon[0]
         evolve = int(pokemon[1]) // int(pokemon[2])
-        candy_remain = int(pokemon[1]) % int(pokemon[2])
+        candy_remain = int  (pokemon[1]) % int(pokemon[2])
         while (int(pokemon[2]) - int(candy_remain)) < (int(poke_num) - int(evolve) - 1):
             evolve += 1
             poke_num = int(poke_num) - (int(pokemon[2]) - int(candy_remain))
