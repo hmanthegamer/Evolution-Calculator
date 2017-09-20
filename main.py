@@ -12,11 +12,14 @@ def main():
             load.main()
         elif x == "list":
             load.list_poke()
+        elif x == "del":
+            load.delete()
         elif x == "help":
             print("Commands:"
                   "\nadd = regester a new Pokemon"
                   "\nout = output how many Pokemon you can evolve"
-                  "\nlist = list all Pokemon you currently have")
+                  "\nlist = list all Pokemon you currently have"
+                  "\ndel = delete a pokemon, will prompt for name")
         else:
             print("Try typing \"help\"")
 

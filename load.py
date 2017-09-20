@@ -1,5 +1,5 @@
 import numpy
-from os import listdir
+from os import listdir, remove
 from os.path import isfile, join
 
 def get_names():
@@ -25,3 +25,8 @@ def list_poke():
     for i in files:
         pokemon = numpy.load("storage\\" + i)
         print(pokemon[3])
+def delete():
+    to_remove = input("Which pokemon do you want to delete? ")
+    remove("storage\\"+to_remove+".npy")
+    print("Success")
+    
