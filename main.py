@@ -19,7 +19,7 @@ def main():
                   "\nadd = regester a new Pokemon"
                   "\nout = output how many Pokemon you can evolve"
                   "\nlist = list all Pokemon you currently have"
-                  "\ndel = delete a pokemon, will prompt for name")
+                  "\ndel = delete a pokemon, will prompt for name \"all\" will delete all")
         else:
             print("Try typing \"help\"")
 

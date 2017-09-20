@@ -26,7 +26,12 @@ def list_poke():
         pokemon = numpy.load("storage\\" + i)
         print(pokemon[3])
 def delete():
-    to_remove = input("Which pokemon do you want to delete? ")
-    remove("storage\\"+to_remove+".npy")
+    to_remove = str.lower(input("Which pokemon do you want to delete? "))
+    if to_remove == "all":
+        files = get_names()
+        for i in files:
+            remove("storage\\"  + i)
+    else:
+        remove("storage\\"+to_remove+".npy")
     print("Success")
     
